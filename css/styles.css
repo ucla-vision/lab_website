@@ -1,0 +1,352 @@
+/**
+ * Styles for HTML components.
+ */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #536fac;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3, h4, h5, h6 {
+    font-size: 1rem;
+}
+
+a {
+    color: #207cdf;
+}
+
+/**
+ * Styles for HTML components.
+ * The "uvl-" prefix is an acronym for "UCLA Vision Lab".
+ * It is added to avoid potential name confilits with CSS libraries.
+ */
+.uvl-logo {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.0;
+    margin: 10px 20px;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .uvl-logo {
+        font-size: 45px;
+    }
+}
+
+.uvl-logo-ucla {
+    color: #febb36;
+    padding: 0;
+}
+
+.uvl-logo-vision {
+    color: #536fac;
+    padding: 0;
+}
+
+.uvl-logo-lab {
+    color: #febb36;
+    padding: 0;
+}
+
+nav.uvl-navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.uvl-navbar-top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+nav.uvl-navbar > .uvl-navbar-top,
+nav.uvl-navbar > .navbar-collapse {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+nav.uvl-navbar button.navbar-toggler {
+    margin: 10px 0 10px 15px;
+}
+
+nav.uvl-navbar ul.navbar-nav {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+nav.uvl-navbar li {
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+nav.uvl-navbar li.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    nav.uvl-navbar {
+        box-shadow: none;
+    }
+    nav.uvl-navbar > .navbar-collapse {
+        box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+    }
+    nav.uvl-navbar ul.navbar-nav {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        max-width: auto;
+    }
+    nav.uvl-navbar li {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    nav.uvl-navbar li.active {
+        background-color: transparent;
+        position: relative;
+    }
+    nav.uvl-navbar li.active > a::after {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.uvl-main {
+    /* background-color: #efefe2; */
+    background-color: #ede8de;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.uvl-main > :last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .uvl-main {
+        max-width: 720px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .uvl-main {
+        max-width: 960px;
+    }
+}
+
+.uvl-footer {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .uvl-footer {
+        max-width: 720px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .uvl-footer {
+        max-width: 960px;
+    }
+}
+
+.uvl-figure {
+    margin-bottom: 25px;
+}
+
+.uvl-figure img {
+    /* Workaround for an IE bug:
+     * https://stackoverflow.com/questions/8673356/ie-doesnt-support-height-auto-for-images-what-should-i-use
+     */
+    min-height: 1px;
+}
+
+.uvl-figure .card-body {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+/**
+ * Styles for people.
+ * The "uvl-" prefix is an acronym for "UCLA Vision Lab".
+ * It is added to avoid potential name confilits with CSS libraries.
+ */
+ .uvl-people-heading:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
+.uvl-person-info,
+.uvl-person-name,
+.uvl-person-title,
+.uvl-person-affil,
+.uvl-person-misc {
+    display: block;
+}
+
+.uvl-person-name,
+.uvl-person-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.uvl-person-affil,
+.uvl-person-misc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+.uvl-cur-member {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.uvl-cur-member > a {
+    display: block;
+}
+
+.uvl-cur-member > img,
+.uvl-cur-member > a > img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 130px;
+}
+
+.uvl-prev-member,
+.uvl-prev-member > a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+.uvl-prev-member {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.uvl-prev-member > img,
+.uvl-prev-member > a > img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 100px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.uvl-prev-member > a,
+.uvl-prev-member > .uvl-person-info,
+.uvl-prev-member > a > .uvl-person-info {
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+    max-width: 100%;
+}
+
+.uvl-prev-member .uvl-person-title {
+    margin-top: 5px;
+}
+
+
+/**
+ * Styles for publications.
+ * The "uvl-" prefix is an acronym for "UCLA Vision Lab".
+ * It is added to avoid potential name confilits with CSS libraries.
+ */
+
+.uvl-pub-heading:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
+.uvl-pub {
+    margin-bottom: 10px;
+}
+
+.uvl-pub-title {
+    color: #536fac;
+    display: block;
+    font-weight: bold;
+}
+
+.uvl-pub-channel::before {
+    content: "In ";
+    font-style: normal;
+}
+
+.uvl-pub-channel {
+    font-style: italic;
+}
+
+.uvl-pub-channel::after {
+    content: ", ";
+    font-style: normal;
+}
+
+.uvl-pub-link {
+    margin-right: 1rem;
+}
+
+.uvl-pub-bibtex {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px;
+    white-space: pre-wrap;
+}

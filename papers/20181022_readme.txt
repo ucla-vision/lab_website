@@ -1,0 +1,9 @@
+There are 2 ways to provide a PDF link for a paper in the "Publications" page:
+  1. Linking to a publicly available webpage (like arXiv).
+  2. Linking to papers/paper_name.pdf on the same server.
+
+This folder contains all papers that use option 2. It is quite large (500+ MB), so I didn't include it in the git repository.
+
+I saved a copy of the 2018-version of this folder in my portable hard drive. If the papers in this folder are somehow lost in the future, contact Peng Zhao for a copy. Ask Stefano for my email address.
+
+With arXiv becoming popular, we should use option 1 as much as possible for future papers. Only use option 2 and add a paper here when you cannot find a publicly available link for the PDF.
