@@ -198,22 +198,29 @@ nav.uvl-navbar li.active {
     }
 }
 
-.uvl-figure {
-    margin-bottom: 25px;
-}
+/**
+ * Styles for home.
+ * The "uvl-" prefix is an acronym for "UCLA Vision Lab".
+ * It is added to avoid potential name confilits with CSS libraries.
+ */
 
-.uvl-figure img {
+.uvl-home-cover {
+    display: block;
+    margin-bottom: 20px;
     /* Workaround for an IE bug:
-     * https://stackoverflow.com/questions/8673356/ie-doesnt-support-height-auto-for-images-what-should-i-use
-     */
+    * https://stackoverflow.com/questions/8673356/ie-doesnt-support-height-auto-for-images-what-should-i-use
+    */
     min-height: 1px;
+    width: 100%;
 }
 
-.uvl-figure .card-body {
-    color: rgba(0, 0, 0, 0.8);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8em;
-    padding: 10px;
+@media (min-width: 992px) {
+    .uvl-home-cover {
+        float: right;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 360px;
+    }
 }
 
 /**
