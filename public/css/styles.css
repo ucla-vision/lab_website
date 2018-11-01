@@ -267,9 +267,7 @@ nav.uvl-navbar li.active {
 
 .uvl-cur-member > img,
 .uvl-cur-member > a > img {
-    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     display: block;
     height: 130px;
     margin-left: auto;
@@ -294,9 +292,7 @@ nav.uvl-navbar li.active {
 
 .uvl-prev-member > img,
 .uvl-prev-member > a > img {
-    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     height: 100px;
