@@ -235,6 +235,11 @@ nav.uvl-navbar li.active {
     margin-top: 2rem;
 }
 
+ .uvl-special-heading:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
+
 .uvl-person-info,
 .uvl-person-name,
 .uvl-person-title,
